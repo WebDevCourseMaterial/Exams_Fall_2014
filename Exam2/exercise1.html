@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Selectors</title>
+    <style>
+      body {
+        font: 1em "Comic Sans MS", san-serif;
+      }
+      /* TODO: Create a selector using an id to give the Fictional list a red border. */ {
+        border: 1px solid red;
+      }
+      /* TODO: Create a selector using an id to give the Non-fictional list a blue border. */ {
+        border: 1px solid blue;
+      }
+      /* TODO: Create a selector for the two ids above that gives them both a 200px width (comma separator). */ {
+        width: 200px;
+      }
+      /* TODO: Create a selector using a class to remove bullets from the top most list. */ {
+        list-style-type: none;
+      }
+      /* TODO: Create a selector using a class and pseudo-class to make a yellow hover state as appropriate. */ {
+        background-color: yellow;
+      }
+      /* TODO: Create a selector using a class, child combinator, then tag to separate the top list from the bottom list (and top list from the title). */ {
+        margin-top: 30px;
+      }
+      /* TODO: Create a selector using a tag and pseudo-element to add the tree icons to the heading
+         (then use a comma and add the other side too.). */ {
+        content: url(Tree.png);
+        position: relative;
+        top: 5px;
+        margin: 0 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Family Tree</h1>
+      <ul class="top-level">
+        <li>Fictional
+          <ul id="fictional-list">
+            <li>Simpsons
+              <ul class="family-members">
+                <li>Homer</li>
+                <li>Lisa</li>
+                <li>Bart</li>
+                <li>Marge</li>
+                <li>Maggie</li>
+              </ul>
+            </li>
+            <li>Flintstones
+              <ul class="family-members">
+                <li>Fred</li>
+                <li>Wilma</li>
+                <li>Pebbles</li>
+                <li>Dino</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Non-fictional
+          <ul id="non-fictional-list">
+            <li>Fishers
+              <ul class="family-members">
+                <li>Dave</li>
+                <li>Kristy</li>
+                <li>McKinley</li>
+                <li>Keegan</li>
+                <li>Bowen</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+  </body>
+</html>

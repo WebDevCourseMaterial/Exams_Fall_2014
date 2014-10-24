@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Combinators</title>
+	<style>
+	body {
+		font: bold 1em "Comic Sans MS", san-serif;
+	}
+	/* TODO: Create selector. */ {
+		font-size: 3em;
+	}
+	/* TODO: Create selector. */ {
+		font-weight: normal;
+	}
+	/* TODO: Create selector. */ {
+		background-color: yellow;
+	}
+	/* TODO: Create selector. */ {
+		background-color: red;
+	}
+	/* TODO: Create selector. */ {
+		background-color: gray;
+	}
+	/* TODO: Create selector. */ {
+		text-align: right;
+	}
+	</style>
+</head>
+<body>
+	<hr>
+	<table border="2px" cellpadding="4px" cellspacing="0">
+		<thead>
+			<tr>
+				<td>
+					Outer Table
+				</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					body row 1
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table border="2px" cellpadding="4px" cellspacing="0">
+						<tbody>
+							<tr>
+								<td>
+									(0,0)
+								</td>
+								<td>
+									(1,0)
+								</td>
+							</tr>
+							<tr>
+								<td>
+									(1,0)
+								</td>
+								<td>
+									(1,1)
+								</td>
+							</tr>
+						</tbody>
+						<thead>
+							<tr>
+								<td>
+									Header 1
+								</td>
+								<td>
+									Header 2
+								</td>
+							</tr>
+						</thead>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					body row 3
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<hr>    
+</body>
+</html>
