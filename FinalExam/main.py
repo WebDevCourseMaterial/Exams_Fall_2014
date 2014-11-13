@@ -29,7 +29,7 @@ jinja_env = jinja2.Environment(
 class MainPage(webapp2.RequestHandler):
     def get(self):
         template = jinja_env.get_template("templates/ttt.html")
-        self.response.out.write(template.render({"ttt_stats": ttt_stats}))
+        self.response.out.write(template.render({}))
 
 
 class ResetStatsAction(webapp2.RequestHandler):
